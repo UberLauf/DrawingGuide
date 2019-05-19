@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>
+ Гайд по рисованию
+</title>
+<style>
+* {
+	background: #BC8F8F;
+	font-family: Comic Sans MS;
+}
+.gif {
+	height: 340px;
+	width: 370px;
+	margin: 5px -3px 5px 1px;
+}
+.img {
+	height: 400px;
+	width: 500px;
+    margin: 5px -3px 5px 1px;
+}
+.b {
+	float: center;
+	font-size: 15px;
+	color: black;
+	width: 100%;
+	margin: 10px -7px;
+	padding: 2%;
+	background: #D8BFD8;
+}
+.list {
+float: center;
+text-align: center;
+font-weight: bold;
+border: 2px #D8BFD8;
+background-color: rgba(255, 255, 255, 0.7);
+padding-bottom: 5px;
+margin: 15px 15px;
+}
+.text {
+display: none;
+margin: 5px;
+}
+button:hover {
+font-size: 16px;
+text-decoration: underline;
+}
+</style>
+<script type="text/javascript">
+function basic() {
+	var a = document.getElementById('basic');
+	var b = document.getElementById('progress');
+	var c = document.getElementById('tools');
+	a.style.display="inline";
+	b.style.display="none";
+	c.style.display="none";
+}
+function progress() {
+	var a = document.getElementById('basic');
+	var b = document.getElementById('progress');
+	var c = document.getElementById('tools');
+	a.style.display="none";
+    b.style.display="inline";
+	c.style.display="none";
+}
+function tools() {
+	var a= document.getElementById('basic');
+	var b = document.getElementById('progress');
+	var c = document.getElementById('tools');
+	a.style.display="none";
+	b.style.display="none";
+	c.style.display="inline";
+}
+</script>
+</head>
+<body>
+<div class="b">
+Рисование-это сложный, но в то же время интересный труд. Существует стереотип, который утверждает, что далеко не каждый может стать художником. Но это не так, ведь
+научиться рисовать может любой человек, стоит только приложить должное количество
+усилий. 
+</div>
+
+<button class="list" onclick="basic()">
+<img src="basic.jpg" class="img">
+<br> Основы рисования
+</button>
+
+<button class="list" onclick="progress()">
+<img src="progress.jpg" class="img">
+<br> От простого к сложному
+</button>
+
+<button class="list" onclick="tools()">
+<img src="tools.jpg" class="img">
+<br> Инструменты и материалы
+</button>
+<img src="im.gif" class="gif">
+
+<p id="basic" class="text">
+<br>
+Это первый и самый главный совет. Будь у вас хоть необъятный талант, вы все равнодолжны знать такие вещи, как композиция, анатомия/фигура, перспектива, объем, свет и
+так далее. Без этих знаний вы не сможете называться профессиональным художником. </p>
+
+<p id="progress" class="text">
+<br>
+Более менее известный факт, что рисунок рисунку рознь. Имеется в первую очередь в виду то, что рисовать человека, далеко не то же самое что и рисовать, допустим, дерево. Разные вещи требуют для идеального исполнения разных подходов.
+<br>Не стоит сразу браться за сложные композиции. Поскольку в науке рисования очень важен настрой, с которым вы начинаете работать. Если же вы сразу взялись за сложный рисунок, а у вас ничего не получилось, то плохой настрой вам обеспечен.  Поэтому идти в наших тренировках мы будем от простого к сложному, постепенно изучая новые техники рисования</p>
+
+<p id="tools" class="text">
+<br>Очень хорошо, если вы умеете рисовать карандашом, но будет намного интереснее и полезнее, если вы также научитесь использовать чернила, краски, маркеры, пастель и т.д. Вам стоит попробовать разные материалы, хотя бы потому что вы можете столкнуться с тем, что вам особенно понравится.
+<br>Не используйте модные художественные доски или молескины. Купите большой блокнот или альбом с белыми листами. Ваша цель — сделать как можно больше и быстрее набросков, не беспокоясь о том, чтобы тратить дорогостоящую бумагу.</p>
+</body>
+</html>
